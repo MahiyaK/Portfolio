@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+.gradient-bg {
+         background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+     }
+     
+
+#skills { background-color: #f9fafb; } /* Warmer light gray */
+section { border-bottom: 1px solid #e5e7eb; } /* Optional subtle dividers */
+
+.project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+
+
+.skill-card {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .floating-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .progress-bar {
+            animation: fillProgress 2s ease-in-out;
+        }
+        
+        @keyframes fillProgress {
+            0% { width: 0%; }
+        }
+        
+        .skill-detail {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-card:hover .skill-detail {
+            opacity: 1;
+            max-height: 200px;
+        }
+        
